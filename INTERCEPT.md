@@ -1,5 +1,15 @@
 # Cypress guide
 
+### Mock with fixed response:
+```
+cy.intercept(
+    'POST',
+    '/some/route', 
+    `
+    {"mockKey": "mockValue"}
+    `
+);
+```
 
 ### Simulate network error for a particular request
 
